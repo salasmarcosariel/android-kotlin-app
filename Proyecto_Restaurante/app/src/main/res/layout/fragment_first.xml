@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    android:background="@drawable/plato"
+    >
+
+
+
+    <EditText
+        android:id="@+id/edit_nomLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textSize="20dp"
+
+        android:drawablePadding="10dp"
+        android:hint="Gmail"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edit_passLog"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_passLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:textSize="20dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#9b9b9b"
+        app:cornerRadius="200dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/black"
+        />
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regístrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#9b9b9b"
+        app:cornerRadius="200dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/black"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

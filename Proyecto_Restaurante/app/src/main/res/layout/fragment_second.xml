@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment"
+    android:background="@drawable/img_pas"
+
+    >
+
+
+    <EditText
+        android:id="@+id/edit_nomReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textSize="20dp"
+        android:drawablePadding="10dp"
+        android:hint="Gmail"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edit_passReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_passReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:textSize="20dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn_registr"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_registr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_atras"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#9b9b9b"
+        app:cornerRadius="200dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/btn_atras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atrás"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#9b9b9b"
+        app:cornerRadius="200dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
